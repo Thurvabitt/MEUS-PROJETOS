@@ -11,7 +11,7 @@ int main()
     
     printf("Digite o Valor do Salario Minimo atual: ");
     scanf("%f", &VlSalarioMin);
-    //printf("O Valor Digitado foi %0.2f", VlSalarioMin);
+
     
     printf("Digite a Quantidade de litros de agua gasto no mes: ");
     scanf("%f", &QtdAgua);
