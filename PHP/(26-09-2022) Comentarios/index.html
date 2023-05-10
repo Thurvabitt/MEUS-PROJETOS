@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revisão</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <div class="titulo">
+        <h1>Deixe um comentário</h1>
+    </div>
+
+    <div class="form">
+        <form action="comentario.php" method="get">   
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" placeholder="Insira seu nome completo">
+                <p></p>
+            <label for="email">E-mail:</label>        
+            <input type="email" name="email" placeholder="@gmail ou @outlook">
+                <p></p>  
+            <label for="senha">Senha:</label>
+            <input type="password" name="senha" placeholder="seja criativo(a)!">
+                <p></p>  
+       
+    </div>
+
+    <div class="mensagem">
+        <label for="textarea">Comentário:</label> <p></p>
+        <textarea name="comentario" cols="30" rows="10"></textarea>
+        <br>
+    </div>
+    
+    <input type="submit" value="Enviar Comentário">
+</form>
+</body>
+</html>

@@ -1,0 +1,7 @@
+TABELA "aluno" SQL - NOME DA ENTIDADE "faculdade" (EXTENSÃO "mysql") 
+
+CREATE TABLE aluno(
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(150),
+    endereco VARCHAR(255)
+    );
