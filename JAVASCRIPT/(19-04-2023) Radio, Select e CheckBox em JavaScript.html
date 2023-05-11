@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario e JS</title>
+</head>
+<body>
+<center>
+    <div>
+<!----------------------------RADIO------------------------------->
+        <div>
+            <h1>Formulários e Javascript</h1>
+        </div>
+        <hr>  
+        <div>
+            <h2>Capturando valores de Radio</h2>
+            <p>Selecione o seu Gênero</p>
+            <p>Gênero:
+                <input type="radio" name="gender" value="Masculino">Masculino
+                <input type="radio" name="gender" value="Feminino">Feminino
+                <input type="radio" name="gender" value="Outro">Outro
+            </p>
+            <p></p>
+            <button onclick="getRadio()">Enviar</button>
+            <div id="radioResult"></div>
+        </div>
+    </div>
+    <hr>    
+
+<!-- ------------------------SELECT------------------------------------ -->
+    <div>
+        <h2>Qual elemento da select foi selecionado</h2>
+        <p>Selecione o seu plano</p>
+
+        <select id="select1">
+            <option value="gratuito">Gratuito</option>
+            <option value="basico">Básico</option>
+            <option value="premium">Premium</option>
+        </select>
+
+        <p>
+            O plano selecionado é: 
+            <span class="output"></span>
+        </p>
+
+        <button onclick="getOption()">Senta o dedo nimim pra ver o negócio que selecionou</button>
+    </div>
+    <hr>
+
+<!-- ------------------------CHECKBOX------------------------------------ -->
+    <div>
+        <h2>Elementos CHECKBOX</h2>
+        <p>Quais são as suas prioridades?</p>
+
+        <p>Trabalho
+            <input type="checkbox" value="trabalho">
+        </p>
+
+
+        <p>Saúde
+            <input type="checkbox" value="saúde">
+        </p>
+
+
+        <p>Estudos
+            <input type="checkbox" value="estudos">
+        </p>
+
+        <button onclick="getCheckBox()">Enviar</button>
+        <p>
+            Minhas prioridades são: 
+            <span id="pri"></span>
+        </p>
+    </div>
+    <hr>  
+</center>
+
+
+<script>
+    function getRadio(){
+    let elemento = document.getElementsByName("gender");
+
+    for(let i=0; elemento.length; i++){
+        if(elemento[i].checked){
+            document.getElementById("radioResult").innerHTML = 
+            `O gênero selecionado é ${elemento[i].value}`;
+        }
+    }
+}
+
+function getOption(){
+    let selectElement = document.querySelector("#select1");
+    let text = selectElement.value;
+
+    document.querySelector(".output").textContent = text;
+}
+
+function getCheckBox(){
+    let CheckBoxes = document.querySelectorAll('input[type="checkbox"]:checked');
+    let text = "";
+    
+    for(let i=0; i < CheckBoxes.length; i++){
+        text = text + ", " + CheckBoxes[i].value
+    }
+    document.getElementById("pri").innerHTML = text;
+}
+</script>
+</body>
+</html>

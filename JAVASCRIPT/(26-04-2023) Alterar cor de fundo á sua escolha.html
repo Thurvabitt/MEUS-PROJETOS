@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Muda cores</title>
+    </head>
+
+<body id="meufundo"> 
+    <center>
+        <h1>QUAL COR DE FUNDO VOCÊ QUER?</h1>
+        <h2>insira as cores em inglês, por exemplo: blue, red, green etc.</h2>
+       
+    <form> 
+        <div>
+        <input type="text" id="color">
+        </div>
+
+        <input type="submit" value="TROCAR" onclick="trocarcor();return false;"> 
+    </form>
+    
+    <p id="cor_escolhida"></p>
+    </center> 
+
+    <Script>
+    function trocarcor() {
+    let Cor =  document.querySelector('#color').value;
+
+    document.getElementById('meufundo').style.backgroundColor = Cor;
+    document.getElementById('cor_escolhida').innerHTML = `A cor escolhida foi ${Cor}`;
+}
+    </Script>
+</body>
+</html>
+
+
+

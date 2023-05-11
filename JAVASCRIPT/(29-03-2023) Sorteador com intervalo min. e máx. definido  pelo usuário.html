@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VAMOS SORTEAR!!</title>
+</head>
+<body>
+<center>
+    <h1>VAMOS SORTEAR UM NÚMERO!!</h1>
+
+	<form>
+		<label for="minimo">Insira o valor mínimo</label>
+		<input type="number" id="minimo" name="minimo">
+        <p></p>
+		<label for="maximo">Insira o valor máximo</label>
+		<input type="number" id="maximo" name="maximo">
+        <p></p>
+		<input type="button" value="VAMOS SORTEAR!" onclick="sorteador()">
+	</form>
+
+	<p id="resultado"></p>
+</center>
+
+
+<script>
+function sorteador() {
+    var min = parseInt(document.getElementById("minimo").value);
+    var max = parseInt(document.getElementById("maximo").value);
+    var resultado = document.getElementById("resultado");
+    
+    if (min >= max) {
+        resultado.innerHTML = "o número mínimo tem que ser menor que o máximo";
+        return;
+    }
+    
+    var sorteado = Math.floor(Math.random() * (max - min + 1)) + min;
+    resultado.innerHTML = sorteado;
+}
+</script>
+</body>
+</html>

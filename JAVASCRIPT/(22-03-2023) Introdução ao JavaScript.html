@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>primeiro JS</title>
+</head>
+<body>
+<div>
+<center>
+<h1>Introdução ao JavaScript</h1>
+</center>
+
+    <div>
+        <h2>ver data e hora</h2>
+
+
+        <p>
+            clique no botão para ver a data e a hora do sistema
+        </p>
+
+
+        <button onclick="document.getElementById('dh').innerHTML = Date()">
+            veja a data e hora
+        </button>
+
+
+        <!--p para exibir data e hora-->
+        <p id="dh"></p>
+    </div>  
+
+    <hr>
+
+    <div>
+        <h2>Transferir informação com JS</h2>
+
+        <p id="paragrafo1">olá, este é meu primeiro código utilizando JavaScript</p>
+
+        <button onclick="myfunction()">
+            clica aqui pra copiar o texto acima
+        </button>
+
+        <p id="paragrafo2"></p>
+    </div>
+
+    <hr>
+
+<div>
+    <h2>editando o src de uma imagem</h2>
+
+    <p>JavaScript pode editar a fonte de uma imagem</p>
+
+    <button onclick="liga()">liga</button>
+    <img id="lampada" src="https://www.w3schools.com/js/pic_bulboff.gif" alt="uma lampada apagada">
+
+    <button onclick="desliga()">desliga</button>
+
+</div>
+
+<hr>
+
+<div>
+    <h2>alterando estilo com JavaScript</h2>
+    <p id="Pstyle">este parágrafo será alterado quando o botão abaixo receber um clique</p>
+
+    <button onclick="editstyle()" onmouseover="editDisplay" onmouseover="editDisplay2">clica aqui para editar o estilo do parágrafo</button>
+</div>
+
+<hr>
+
+<div>
+    <h2>janela de alertas</h2>
+    <button onclick="Verjanela()">Veja uma mensagem</button>
+</div>
+</div>
+
+
+<script>
+    function myfunction(){
+        var x = document.getElementById("paragrafo1").innerHTML;
+        document.getElementById("paragrafo2").innerHTML = x;
+    }
+
+
+    function liga(){
+        document.getElementById('lampada').src = "https://www.w3schools.com/js/pic_bulbon.gif";
+    }
+
+    function desliga(){
+        document.getElementById('lampada').src = "https://www.w3schools.com/js/pic_bulboff.gif";
+    }
+
+
+    function editstyle(){
+        document.getElementById('Pstyle').style.fontSize = '3em'
+    }
+
+    function editDisplay(){
+        document.getElementById('Pstyle').style.display = "none";
+    }
+
+    function editDisplay2(){
+        document.getElementById('Pstyle').style.display = "block";
+    }
+
+    function Verjanela(){
+        window.alert("Olá👋")
+    }
+
+</script>
+
+</body>
+</html>
