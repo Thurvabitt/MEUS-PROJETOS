@@ -1,0 +1,7 @@
+C:\Users\autologon.CSED\Desktop\Aula1Csharp\Aula1Csharp\bin\Debug\Aula1Csharp.exe.config
+C:\Users\autologon.CSED\Desktop\Aula1Csharp\Aula1Csharp\bin\Debug\Aula1Csharp.exe
+C:\Users\autologon.CSED\Desktop\Aula1Csharp\Aula1Csharp\bin\Debug\Aula1Csharp.pdb
+C:\Users\autologon.CSED\Desktop\Aula1Csharp\Aula1Csharp\obj\Debug\Aula1Csharp.csproj.AssemblyReference.cache
+C:\Users\autologon.CSED\Desktop\Aula1Csharp\Aula1Csharp\obj\Debug\Aula1Csharp.csproj.CoreCompileInputs.cache
+C:\Users\autologon.CSED\Desktop\Aula1Csharp\Aula1Csharp\obj\Debug\Aula1Csharp.exe
+C:\Users\autologon.CSED\Desktop\Aula1Csharp\Aula1Csharp\obj\Debug\Aula1Csharp.pdb
