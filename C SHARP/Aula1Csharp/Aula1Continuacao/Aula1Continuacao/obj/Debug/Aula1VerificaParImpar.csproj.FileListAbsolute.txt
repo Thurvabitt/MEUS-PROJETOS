@@ -1,0 +1,7 @@
+C:\Users\autologon.CSED\Desktop\Aula1Continuacao\Aula1Continuacao\bin\Debug\Aula1Continuacao.exe.config
+C:\Users\autologon.CSED\Desktop\Aula1Continuacao\Aula1Continuacao\bin\Debug\Aula1Continuacao.exe
+C:\Users\autologon.CSED\Desktop\Aula1Continuacao\Aula1Continuacao\bin\Debug\Aula1Continuacao.pdb
+C:\Users\autologon.CSED\Desktop\Aula1Continuacao\Aula1Continuacao\obj\Debug\Aula1VerificaParImpar.csproj.AssemblyReference.cache
+C:\Users\autologon.CSED\Desktop\Aula1Continuacao\Aula1Continuacao\obj\Debug\Aula1VerificaParImpar.csproj.CoreCompileInputs.cache
+C:\Users\autologon.CSED\Desktop\Aula1Continuacao\Aula1Continuacao\obj\Debug\Aula1Continuacao.exe
+C:\Users\autologon.CSED\Desktop\Aula1Continuacao\Aula1Continuacao\obj\Debug\Aula1Continuacao.pdb
