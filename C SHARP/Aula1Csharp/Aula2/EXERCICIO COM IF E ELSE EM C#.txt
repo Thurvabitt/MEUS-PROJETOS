@@ -1,0 +1,26 @@
+EXERCICIO COM IF E ELSE EM C#:
+
+public class program
+{
+    public static void Main(string[] args)
+    {
+        //Receber uma idade e acompanhante (booleano)
+        //só entra +18
+
+        Console.WriteLine("Digite a idade "); //printa pergunta na tela
+        int idade = int.Parse(Console.ReadLine()) // scan do texto digitado em relação á pergunta acima
+
+        Console.WriteLine("Acompanhado? 0-Não | 1-sim")
+        bool acompanhado = bool.Parse(Console.ReadLine());
+        
+        if(idade>= 18 && acompanhado == true){
+            Console.WriteLine("Acesso Autorizado!");
+
+        }else
+        {
+            Console.WriteLine("Acesso Negado!");
+        }
+        
+        Console.ReadLine(); //aguardará uma tecla para encerrar.
+    }
+}

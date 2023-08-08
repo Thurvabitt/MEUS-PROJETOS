@@ -1,0 +1,15 @@
+EXERCICIO COM LAÇO DE REPETIÇÃO 
+
+Exibir de 1 a 100 todos os múltiplos de 3
+
+int valor = 0;
+while(valor <= 100)
+{
+  if(valor % 3 == 0)
+  {
+    Console.WriteLine(valor + " - ");
+  }
+  valor++;
+
+  Console.ReadLine();//Aguarda uma tecla para encerrar
+}

@@ -1,0 +1,14 @@
+EXERCICIO C# TABUADA COM DO WHILE
+{
+Console.WriteLine("Digite um número para ver sua Tabuada");
+
+int numero = int.Paese(Console.ReadLine());
+int i = 0;
+
+do
+{
+    i++;
+    Console.WriteLine(numero + " x " + i + " = " + (numero*i))
+} While (i<10);
+
+    Console.ReadLine();//Aguarda uma tecla para encerrar
